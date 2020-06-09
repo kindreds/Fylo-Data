@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --Pale_Blue: hsl(243, 100%, 93%);
+    --Grayish_Blue: hsl(229, 7%, 55%);
+    --Dark_Blue: hsl(228, 56%, 26%);
+    --Very_Dark_Blue: hsl(229, 57%, 11%);
+    --contenedor: 20.375rem;
+    --Gradient1:hsl(6, 100%, 80%);
+    --Gradient2:hsl(335, 100%, 65%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Raleway', sans-serif;
+}
+
+.hero {
+    background: url(/images/bg-mobile.svg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1080px) {
+    .hero {
+        background: url(/images/bg-desktop.svg);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: var(--Very_Dark_Blue);
+    }
+    .contenedor {
+        display: flex;
+        align-items: flex-end;
+    }
+    .fylo {
+        margin-right: 2.5rem;
+    }
+    .aviso {
+        position: absolute;
+        top: -36%;
+        right: -21.25rem;
+    }
+
+    .aviso .flecha {
+        position: absolute;
+        left: 7.75rem;
+        top: 4.375rem;
+        height: 0;
+        width: 0;
+        border-right: 1.75rem solid var(--Pale_Blue);
+        border-top: 1.75rem solid var(--Pale_Blue));
+        border-left: 1.75rem solid transparent;
+        border-bottom: 2.375rem solid transparent;    
+    }
+
+    .storage {
+        width: 37.5rem !important; 
+    }
+    .barra,
+    .detalle {
+        width: 31.25rem !important; 
+    }
+    .progresion {
+        width: 23.75rem !important;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .progresion .circulo {
+        width: 1.0625rem;
+        height: 1.0625rem;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0.0625rem 0.125rem;
+    }
+    .capacidad {
+        text-align: start !important;
+        margin-left: 3.125rem;
+    }
+
+}
+
+.fylo {
+    width: var(--contenedor);
+    min-height: 14.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--Dark_Blue);
+    padding-left: 40px;
+    border-radius: 0px 80px 10px 10px;
+}
+
+
+.logo img {
+    width: 150px;
+}
+
+.block__dfu {
+    display: flex;
+    width: 11rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__dfu a {
+    background-color: var(--Very_Dark_Blue);
+    width: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storage {
+    min-width: var(--contenedor);
+    height: 11.875rem;
+    border-radius: 10px;
+    background-color: var(--Dark_Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.capacidad,
+.detalle {
+    text-align: center;
+    color: var(--Grayish_Blue);
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 260px;
+    height: 25px;
+    background-color: var(--Very_Dark_Blue);
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 2.5px;
+    display: flex;
+}
+
+.progresion {
+    height: 20px;
+    width: 200px;
+    background: linear-gradient(0.25turn, #FFA399, #FF4D97);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circulo {
+    width: 1.0625rem;
+    height: 1.0625rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0.0625rem 0.125rem;
+    
+}
+
+.detalle {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    margin: 0 auto;
+}
+
+
+.aviso {
+    width: 180px;
+    height: 80px;
+    background: var(--Pale_Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+}
+
+.aviso h1 {
+    margin-right: 10px;
+}
+
+.aviso p {
+    font-weight: 700;
+    color: var(--Grayish_Blue);
+    
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    color: var(--Grayish_Blue);
+}
